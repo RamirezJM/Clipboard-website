@@ -14,11 +14,17 @@
 <body>
   <main>
     <section class="relative flex">
-      <img src="src/assets/images/bg-header-desktop.png" alt="" class="w-full -z-10 absolute">
-      <div class="flex flex-col justify-center items-center gap-4 relative mx-auto my-12">
+      <picture class="absolute inset-0 -z-10">
+        <source media="(max-width: 576px)" src="src/assets/images/bg-header-mobile.png">
+        <img src="src/assets/images/bg-header-desktop.png" alt="hero image" class="size-full object-cover">
+
+      </picture>
+      <!-- <img src="src/assets/images/bg-header-desktop.png" alt="" class="w-full -z-10 absolute"> -->
+      <div class="flex flex-col justify-center items-center gap-8 relative mx-auto my-12 py-12">
         <img src="src/assets/images/logo.svg" alt="logo" class="w-20 mb-6">
-        <h1 class="font-sans text-2xl font-medium">A history of everything you copy</h1>
-        <p class="max-w-lg text-center text-lg">Clipboards allows you to track and organize everything you copy.
+        <h1 class="font-sans text-3xl font-semibold text-slate-700">A history of everything you copy</h1>
+        <p class="max-w-lg text-center text-lg text-slate-600">Clipboards allows you to track and organize everything
+          you copy.
           Instantly
           access your clipboard on all your devices.</p>
         <div class="flex flex-col md:flex-row gap-4">
@@ -28,58 +34,66 @@
       </div>
     </section>
 
-    <section class="features flex flex-col items-center  py-6 px-12 my-6">
+    <section class="features section-container">
 
-      <h2 class="font-sans text-2xl font-medium my-8">Keep track of your snippets</h2>
-      <p class="max-w-lg text-center text">Clipboard instantly stores any item you copy in the cloud, meaning you
+      <h2 class="font-sans text-2xl font-semibold text-slate-700 my-8">Keep track of your snippets</h2>
+      <p class="max-w-lg text-center text-lg text-slate-600 pb-8">Clipboard instantly stores any item you copy in the
+        cloud,
+        meaning you
         can access your snippets immediately
         on all your devices. Our Mac and IOS apps will help you organize everything.</p>
 
       <div class="flex flex-col md:flex-row gap-6 my-6">
-        <div class="aspect-3/2">
+        <div class="aspect-3/2 flex items-center justify-center">
           <img src="src/assets/images/image-computer.png" alt="" class="object-cover">
         </div>
-        <div class="flex flex-col gap-2 pt-12">
-          <p class="font-l font-semibold">Quick Search</p>
-          <p class="mb-4">Easily search your snippets by content, category, web address, application and more.</p>
-          <p class="font-l font-semibold">iCloud Sync</p>
-          <p class="mb-4">Instantly saves and syncs snippets across all your devices.</p>
-          <p class="font-l font-semibold">Completely History</p>
-          <p class="mb-4">Retrieve any snippets from the fist moment you started used the app.</p>
+        <div class="flex flex-col gap-2 pt-12 my">
+          <h3 class="font-xl font-semibold text-slate-700">Quick Search</h3>
+          <p class="mb-4 text-lg text-slate-600">Easily search your snippets by content, category, web address,
+            application and more.</p>
+          <h3 class="font-xl font-semibold text-slate-700">iCloud Sync</h3>
+          <p class="mb-4 text-lg text-slate-600">Instantly saves and syncs snippets across all your devices.</p>
+          <h3 class="font-xl font-semibold text-slate-700">Completely History</h3>
+          <p class="mb-4 text-lg text-slate-600">Retrieve any snippets from the fist moment you started used the app.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="access flex flex-col items-center  py-6 px-12 my-6">
-      <h2 class="font-sans text-2xl font-medium my-8">Access Clipboard Anywhere</h2>
-      <p class="max-w-lg text-center text">Wheter you're on the go, or at yout computer, you can access all your
+    <section class="access section-container">
+      <h2 class="font-sans text-2xl font-semibold text-slate-700 my-8">Access Clipboard Anywhere</h2>
+      <p class="max-w-lg text-center text-lg text-slate-600 pb-8">Wheter you're on the go, or at yout computer, you can
+        access all your
         Clipboard snippets in a few simple clicks.</p>
-      <div class="aspect-3/2 my-12">
+      <div class="aspect-3/2">
         <img src="src/assets/images/image-devices.png" alt="" class="object-cover">
       </div>
     </section>
 
-    <section class="tools flex flex-col items-center py-6 px-12 my-6">
-      <h2 class="font-sans text-2xl font-medium my-8">Supercharge your workflow</h2>
-      <p class="max-w-lg text-center text">We've got the tools to boost your productivity.</p>
+    <section class="tools section-container">
+      <h2 class="font-sans text-2xl font-semibold text-slate-700 my-8">Supercharge your workflow</h2>
+      <p class="max-w-lg text-center text-lg text-slate-600">We've got the tools to boost your productivity.</p>
 
       <div class="flex flex-wrap gap-4 my-12 justify-center">
         <div class="flex flex-col items-center gap-2">
           <img src="src/assets/images/icon-blacklist.svg" alt="list icon" class="w-12">
-          <h3>Create Blacklist</h3>
-          <p class="max-w-xs text-center text-sm">Easily search your snippets by content, category, web address,
+          <h3 class="text-xl font-semibold text-slate-700">Create Blacklist</h3>
+          <p class="max-w-xs text-center text-slate-600 text-sm">Easily search your snippets by content, category, web
+            address,
             application and
             more.</p>
         </div>
         <div class="flex flex-col items-center gap-2">
           <img src="src/assets/images/icon-text.svg" alt="letter icon" class="w-12">
-          <h3>Plain Text Snippets</h3>
-          <p class="max-w-xs text-center text-sm">Remove unwanted formatting from copied text for a consistent look.</p>
+          <h3 class="text-xl font-semibold text-slate-700">Plain Text Snippets</h3>
+          <p class="max-w-xs text-center text-sm text-slate-600">Remove unwanted formatting from copied text for a
+            consistent look.</p>
         </div>
         <div class="flex flex-col items-center gap-2">
           <img src="src/assets/images/icon-preview.svg" alt="eye icon" class="w-12">
-          <h3>Sneak Preview</h3>
-          <p class="max-w-xs text-center text-sm">Quick preview of all snippets on your Clipboard for you easy access.
+          <h3 class="text-xl font-semibold text-slate-700">Sneak Preview</h3>
+          <p class="max-w-xs text-center text-sm text-slate-600">Quick preview of all snippets on your Clipboard for you
+            easy access.
           </p>
         </div>
       </div>
@@ -94,9 +108,10 @@
 
     </section>
 
-    <section class="download flex flex-col items-center py-6 px-12 my-6">
-      <h2 class="font-sans text-2xl font-medium my-8">Clipboard for IOS and MacOS</h2>
-      <p class="max-w-lg text-center text">Available for free in the App Store. Download for Mac or IOS, sync with
+    <section class="download section-container">
+      <h2 class="font-sans text-2xl text-slate-700 my-8 font-semibold">Clipboard for IOS and MacOS</h2>
+      <p class="max-w-lg text-cente font-lg text-slate-600">Available for free in the App Store. Download for Mac or
+        IOS, sync with
         iCloud and you are ready to start adding to your clipboard.</p>
       <div class="flex flex-col md:flex-row gap-4 mt-12">
         <a href="#" class="py-2 px-4 rounded-full text-white bg-cyan-400 hover:bg-cyan-300">Download for IOS</a>
