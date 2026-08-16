@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Bai Jamburee', sans-serif;
+  --font-sans: 'Bai Jamjuree', sans-serif;
+}
+
+.section-container {
+  @apply flex flex-col items-center py-6 px-12 my-6;
 }
